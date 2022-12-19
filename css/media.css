@@ -1,0 +1,119 @@
+@media (max-width: 1000px) {
+    .video-block video{
+        width: 100%;
+        height: 100%;
+        transform: scale(1.9);
+    }
+    
+    .collections .collections-block{
+        grid-template-columns: 1fr;
+    }
+    
+    .collections .collections-block .item{
+        height: 300px;
+    }
+    
+    .collections .collections-block .item:hover {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 990px) {
+    .films .catalog{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 740px) {
+    .video-block{
+        background: #190d11;
+    }
+    
+    .series .series-block{
+        grid-template-areas: 
+        "seri-1 seri-1"
+        "seri-2 seri-3"
+        "seri-4 seri-5";
+    }
+}
+
+@media (max-width:600px) {
+    header .poster{
+        padding: 5px 0;
+    }
+    
+    header .poster i{
+        font-size: 30px;
+    } 
+    
+    header .poster p {
+        font-size: 12px;
+        margin-left: 12px;
+    }
+    
+    header .menu ul a{
+        padding: 25px 12px;
+    }
+    
+    header .menu img{
+        width: 100px;
+    }
+}
+
+@media (max-width: 500px) {
+    
+    .series .series-block{
+        grid-template-areas: 
+        "seri-1"
+        "seri-2"
+        "seri-3"
+        "seri-4"
+        "seri-5";
+    }
+    
+    .collections .collections-block .item img{
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .video-block img{
+        width: 100%;
+    }
+    
+    
+    .films .catalog{
+        grid-template-columns: 1fr;
+    }
+    
+    header .menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 25px;
+    }
+    
+    .main-fon{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    .main-fon h1 {
+        font-size: 30px;
+    }
+    
+    .main-fon p{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 350px) {
+    header .menu ul a{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:320px) {
+    .block{
+        display: flex;
+    }
+}
